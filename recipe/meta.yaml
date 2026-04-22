@@ -1,5 +1,5 @@
 {% set name = "openstep-parser" %}
-{% set version = "1.5.4" %}
+{% set version = "2.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: f03c7fd9c78ac718c470cb0f667c1f09fa7f58786314f77fef8767302abe1658
+  sha256: bf7763599de5fc67bde55f6394d036fc5f8090deeead42948c8e6209a6033689
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
